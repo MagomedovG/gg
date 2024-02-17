@@ -1,0 +1,27 @@
+{
+  "welcome": "Hello",
+  "experience":"Experience",
+  "work":"Work",
+  "photo":"Photography",
+  "contact":"Response",
+  "first-section": {
+    "title": "I’m Gamzat Magomedov. A Front-End developer",
+    "grey": "based in Dagestan.",
+    "descr": "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.",
+  },
+  "glider": {
+    "title": "title"
+  },
+  "form": {
+    "title": "Let's get started",
+    "descr": "Now that you know a lot about me, let me know if you are interested to work with me.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "friend": {
+    "title": "This is what people say about me",
+    "descr": "Here are a few lines from people who I have worked with over the past all years in my software career."
+  }
+
+}

@@ -1,0 +1,286 @@
+.collab-title{
+    font-family: 'Unbounded', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 59px;
+    text-align: left;
+    margin-bottom: 55px;
+    margin-top: 155px;
+    text-transform: uppercase;
+}
+.collab-buttons {
+    position: relative;
+    background-color: white;
+    border-radius: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 155px;
+    flex-direction: row;
+}
+
+.collab-button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    padding: 30px 71px;
+    /*background-color: white;*/
+    border-radius: 62px;
+    color: rgba(11, 72, 165, 1);
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: calc(100% / 3);
+}
+.tab-radio{
+    display: none;
+}
+.collab-buttons-active {
+    color: white;
+}
+.glider {
+    position: absolute;
+    display: block;
+    color: white;
+    height: 100%;
+    width: calc(100% / 3);
+    background-color: rgba(11, 72, 165, 1);
+    z-index: 1;
+    border-radius: 62px;
+    transition: transform 0.3s ease;
+}
+
+.representation-title{
+    font-family: 'FuturaMediumC', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+.representation-text{
+    font-family: 'FuturaBookC', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 155px;
+}
+.certificates-content{
+    margin-bottom: 155px;
+}
+.certificates-image-wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    /*max-height: 759px;*/
+    flex-wrap: wrap;
+}
+.collab-contacts{
+    margin-top: 155px;
+    margin-bottom: 155px;
+}
+.collab-contacts_title{
+    font-family: 'FuturaDemiC', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 59px;
+    text-align: left;
+    margin-bottom: 55px;
+}
+.collab-contact_title{
+    font-family: 'FuturaMediumC', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.collab-contact{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    padding-top: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.collab-contact:nth-child(4){
+    border: none;
+}
+.collab-contact:nth-child(4) .collab-contact_descr{
+    text-align: right;
+}
+.collab-contact_descr{
+    font-family: 'FuturaBookC', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.collab-contact_descr:hover{
+    color: rgba(11, 72, 165, 1);
+
+}
+.collab-contact_descr a{
+    margin-bottom: 14px;
+    color: black;
+}
+.collab-contact_descr a:hover{
+    margin-bottom: 14px;
+    color: rgba(11, 72, 165, 1);
+}
+.pdf_button {
+    font-family: 'FuturaMediumC', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    padding: 22px 40px;
+    background-color: rgba(11, 72, 165, 1);
+    border-radius: 62px;
+    color: white;
+    position: absolute;
+    bottom: -90px;
+    z-index: 11;
+}
+.pdf_preview{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+.pdf_installer{
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 35%;
+}
+.collab-buttons label:nth-child(2){
+    padding: 25px 50px
+}
+@media screen and (max-width: 1150px){
+    .collab-buttons label:nth-child(2){
+        padding: 25px 35px
+    }
+}
+@media screen and (max-width: 1100px){
+    .collab-buttons{
+        width: 100%;
+    }
+    .collab-contact_title, .collab-contact_descr  {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .collab-button, .collab-buttons label:nth-child(2){
+        font-size: 18px;
+        line-height: 30px;
+        padding: 25px 50px
+    }
+    .certificates-image-wrapper{
+        flex-direction: column;
+        max-height: 100%;
+        gap:40px;
+    }
+    .certificates-image{
+        width: 100%;
+    }
+    .collab-buttons{
+        margin-bottom: 55px;
+    }
+    .collab-title{
+        font-size: 47px;
+        line-height: 50px;
+        margin-bottom: 55px;
+        margin-top: 55px;
+    }
+    .collab-contact_title, .collab-contact_descr  {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .collab-button, .collab-buttons label:nth-child(2){
+        font-size: 14px;
+        line-height: 23px;
+        padding: 20px 25px
+    }
+    .pdf_installer{
+        width: 50%;
+    }
+    .collab-title{
+        font-size: 42px;
+        line-height: 47px;
+        margin-bottom: 55px;
+        margin-top: 55px;
+    }
+    .collab-contact_title, .collab-contact_descr  {
+        font-size: 19px;
+        line-height: 18px;
+    }
+    .pdf_button{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pdf_installer{
+        width: 60%;
+    }
+    .collab-button, .collab-buttons label:nth-child(2){
+        font-size: 9px;
+        line-height: 15px;
+        padding: 13px 17px
+    }
+    .pdf_button{
+        font-size: 16px;
+        padding: 20px 30px;
+    }
+    .collab-buttons{
+        width: 80%;
+        margin-bottom: 29px;
+    }
+    .collab-title{
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 29px;
+        margin-top: 29px;
+    }
+    .collab-contact_title, .collab-contact_descr  {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .pdf_button{
+        font-size: 14px;
+        padding: 15px 30px;
+        bottom: -85px;
+    }
+    .collab-button, .collab-buttons label:nth-child(2){
+        font-size: 8px;
+        line-height: 8px;
+        padding: 8px 13px
+    }
+    .collab-contact_title, .collab-contact_descr  {
+        font-size: 14px;
+        line-height: 12px;
+    }
+    .collab-buttons{
+        width: 100%;
+    }
+    .collab-title{
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 19px;
+        margin-top: 19px;
+    }
+    .collab-buttons{
+        margin-bottom: 19px;
+    }
+}

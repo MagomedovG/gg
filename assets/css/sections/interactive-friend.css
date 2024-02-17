@@ -1,0 +1,210 @@
+.interactive-map {
+    position: relative;
+}
+.image-card {
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.image-card-wrapper{
+    max-width: 1300px;
+    height: 120%;
+    width: 95%;
+    /*top: 40%;*/
+    /*left: 20%;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 14%;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #ffffff;*/
+    background: rgba(30, 30, 30, 1);
+    border-radius: 10px;
+
+}
+.image-container {
+    position: relative;
+}
+.text-image-card{
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    padding:10px 50px;
+    gap: 40px;
+}
+.text-image-card > div{
+    width: 50%;
+}
+.custom-image_map{
+    background-image: url("public/whitearrow.svg") !important;
+}
+/*.interactive-map_buttons{
+	position: absolute;
+	bottom: 10%;
+	padding:10px 30px;
+	gap:35px;
+}*/
+.image-card-wrapper .building_calc{
+    color: white;
+}
+.image-card-wrapper .arrow-circle{
+    border: 1.5px solid white;
+    border-left: 1.5px solid transparent;
+}
+@keyframes pulse_waves {
+    0% {
+        width: 0;
+        height: 0;
+        /*opacity: 1;*/
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+.label {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse_waves 1s linear infinite;
+    background: radial-gradient(circle, rgba(11, 72, 165, 0.1) 0, rgba(11, 72, 165, 0.5) 30%, rgba(11, 72, 165, 0.3) 70%, rgba(253, 122, 62, 0) 100%);
+}
+.close-image-card{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+.interactive-country{
+    color:rgba(11, 72, 165, 1);
+    font-family: 'Futurabook', sans-serif;
+    cursor: pointer;
+    /*z-index: 10;*/
+    margin-bottom: 25px;
+}
+.interactive-point{
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: rgba(11, 72, 165, 1);
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.inter:hover .interactive-country{
+    scale:1.05;
+}
+@media screen and (max-width: 1300px) {
+    .text-image-card{
+        gap: inherit;
+    }
+    .building_button-adaptive{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .text-image-card > div{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .text-image-card > div{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .building_button-adaptive{
+        /*font-size: 12px;*/
+        /*white-space: nowrap;*/
+    }
+    .text-image-card > div{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .building_button-adaptive{
+        font-size: 11px !important;
+        /*white-space: nowrap;*/
+    }
+    .text-image-card > div{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-image-card > div{
+        width: 100%;
+    }
+    @keyframes pulse_waves {
+        0% {
+            width: 0;
+            height: 0;
+            /*opacity: 1;*/
+        }
+        100% {
+            width: 25px;
+            height: 25px;
+            opacity: 0;
+        }
+    }
+    .interactive-country{
+        font-size: 10px;
+    }
+    .close-image-card {
+        top: 10px;
+        right: 10px;
+    }
+    .text-image-card{
+        font-size: 10px;
+        bottom: 5%;
+    }
+}
+@media screen and (max-width: 500px){
+    .interactive-point {
+        width: 3px;
+        height: 3px;
+    }
+    .building_button-adaptive{
+        font-size: 8px !important;
+        /*white-space: nowrap;*/
+    }
+    .close-image-card {
+        top: 5px;
+        right: 5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .building_button-adaptive{
+        font-size: 7px !important;
+        /*white-space: nowrap;*/
+    }
+    @keyframes pulse_waves {
+        0% {
+            width: 0;
+            height: 0;
+            /*opacity: 1;*/
+        }
+        100% {
+            width: 15px;
+            height: 15px;
+            opacity: 0;
+        }
+    }
+    .interactive-country{
+        font-size: 7px;
+    }
+}

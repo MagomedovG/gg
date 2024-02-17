@@ -1,0 +1,28 @@
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    /*margin: 0 auto;*/
+}
+
+.section-wrapper section {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+@media screen and (max-width: 1300px) {
+    .section-wrapper section{
+        width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    .section-wrapper section {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-wrapper section {
+        width: 90%;
+    }
+}

@@ -1,0 +1,130 @@
+.dark .map {
+    background-color: black;
+}
+.width-40{
+    width: 40%;
+}
+.map-title{
+    margin-top: 78px;
+    font-family: Unbounded, sans-serif;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 55px;
+    /*margin-left: 30px;*/
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.map-descr{
+    font-family: Unbounded;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(11, 72, 165, 1);
+}
+.map-descr span{
+    font-family: 'FuturaDemiC', sans-serif;
+    font-size: 129px;
+    font-weight: 600;
+    line-height: 132px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(11, 72, 165, 1);
+}
+.ymaps-2-1-79-map {
+    height: 680px !important;
+}
+@media screen and (max-width: 1100px){
+    .map-title{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 900px){
+    .map-descr, .map-title{
+        font-size: 30px;
+    }
+    .map-title{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .map-descr span{
+        font-size: 100px;
+    }
+    .ymaps-2-1-79-map {
+        height: 400px !important;
+    }
+}
+@media screen and (max-width: 700px){
+    .map-title{
+        font-size: 25px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .ymaps-2-1-79-map {
+        height: 250px !important;
+    }
+    .map-title{
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .map-descr{
+        font-size: 25px;
+    }
+    .map-descr span{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 500px){
+    .map-title{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .map{
+        margin-bottom: -30px;
+    }
+    .ymaps-2-1-79-map {
+        height: 100px !important;
+    }
+    .map-title{
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 13px;
+        margin-top: 55px;
+        margin-bottom: 11px;
+        padding: 0;
+    }
+    .map-descr{
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 10px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .map-descr span{
+        font-size: 27px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .map .label{
+        font-family: 'FuturaMediumC', sans-serif;
+        font-size: 5px;
+        font-weight: 500;
+        line-height: 6px;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 450px) {
+    .width-40{
+        width: 100%;
+    }
+}
