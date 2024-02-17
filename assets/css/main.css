@@ -25,6 +25,7 @@ div {
     display: flex;
     flex-direction: column;
 }
+
 ::-webkit-scrollbar {
     width: 7px;
     cursor: pointer;

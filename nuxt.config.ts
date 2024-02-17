@@ -6,11 +6,13 @@ const locales = fs.readdirSync("locales")
       code: file.replace(/\.(yml|yaml|json)$/, ""),
       file,
     }))
+// @ts-ignore
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-swiper'
   ],
     googleFonts: {
         prefetch: true,

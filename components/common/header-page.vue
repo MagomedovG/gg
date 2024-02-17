@@ -120,7 +120,7 @@ const changeLanguage = (newLocale) => {
     }
 }
 .adaptive-header{
-  width: 250px;
+  width: 350px;
 }
 @media screen and (max-width: 600px) {
   .header-links{
