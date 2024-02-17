@@ -43,9 +43,7 @@
 .text-image-card > div{
     width: 50%;
 }
-.custom-image_map{
-    background-image: url("public/whitearrow.svg") !important;
-}
+
 /*.interactive-map_buttons{
 	position: absolute;
 	bottom: 10%;
