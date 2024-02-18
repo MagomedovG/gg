@@ -20,7 +20,7 @@
       <div class="glider" :style="{ transform: 'translateX(' + (activeEl - 1) * 100 + '%)' }"></div>
     </div>
     <div class="collab-content mb-32" >
-      <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===1">{{ $t('glider.vue') }}</span>
+      <span class="first-descr" style="white-space: pre-wrap" v-if="activeEl===1">{{ $t('glider.vue') }}</span>
       <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===2">{{ $t('glider.react') }}</span>
       <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===3">{{ $t('glider.templates') }}</span>
     </div>

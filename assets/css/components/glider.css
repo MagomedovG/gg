@@ -273,9 +273,9 @@
         bottom: -85px;
     }
     .collab-button, .collab-buttons label:nth-child(2){
-        font-size: 8px;
+        font-size: 12px;
         line-height: 8px;
-        padding: 8px 13px
+        padding: 20px 13px
     }
     .collab-contact_title, .collab-contact_descr  {
         font-size: 14px;

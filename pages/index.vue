@@ -54,4 +54,12 @@ const stackIcons = ref([
   height: 60px;
   margin: 0 auto;
 }
+@media screen and (max-width: 450px){
+  .dark .stack{
+    padding: 15px 0;
+  }
+  .stack-container{
+    height: 40px;
+  }
+}
 </style>

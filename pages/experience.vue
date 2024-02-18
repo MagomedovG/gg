@@ -22,7 +22,7 @@ export default {
 }
 .light{
   .glider-component{
-    background-image: linear-gradient(to right, #f0f0f0 35%, #ddd 35%, #ddd 100%);
+    background: #f0f0f0 ;
   }
 }
 </style>

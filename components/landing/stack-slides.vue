@@ -28,4 +28,8 @@ const props = defineProps({
 })
 </script>
 
-
+<style>
+.swiper-slide img{
+  object-fit: contain;
+}
+</style>
