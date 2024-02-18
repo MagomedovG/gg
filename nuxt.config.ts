@@ -8,6 +8,16 @@ const locales = fs.readdirSync("locales")
     }))
 // @ts-ignore
 export default defineNuxtConfig({
+    head: {
+        link: [
+            {
+                rel: 'stylesheet',
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+                integrity: '...', // Добавьте integrity и crossorigin, если необходимо
+                crossorigin: 'anonymous'
+            }
+        ]
+    },
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',

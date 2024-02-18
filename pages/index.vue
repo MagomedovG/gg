@@ -1,6 +1,7 @@
 <template>
   <div>
     <first-section/>
+    <glider />
     <div >
       <friend-section />
     </div>
@@ -24,6 +25,7 @@ import FirstSection from "~/components/landing/first-section.vue";
 import FriendSection from "~/components/landing/friend-section.vue";
 import StackSlides from "~/components/landing/stack-slides.vue";
 import ChatForm from "~/components/landing/chat-form.vue";
+import Glider from "~/components/landing/glider.vue";
 
 const stackIcons = ref([
     'nuxt3.svg',
@@ -49,7 +51,7 @@ const stackIcons = ref([
 }
 .stack-container {
   max-width: 95vw;
-  height: 90px;
+  height: 60px;
   margin: 0 auto;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <page-section class="collab" data-aos="fade-up">
-    <h1 class="collab-title">{{ $t('glider.title') }}</h1>
+  <page-section class="collab glider-component" data-aos="fade-up">
+    <h2 class="mt-32 mb-32">{{ $t('glider.title') }}</h2>
     <div class="collab-buttons">
       <input type="radio" id="tab-1" name="tabs" class="tab-radio" v-model="activeEl" value="1">
       <label for="tab-1" class="collab-button" :class="{ 'collab-buttons-active': activeEl === 1 }" @click="getRepresentation">
@@ -19,10 +19,10 @@
 
       <div class="glider" :style="{ transform: 'translateX(' + (activeEl - 1) * 100 + '%)' }"></div>
     </div>
-    <div class="collab-content" >
-      <p class="item_title" style="white-space: pre-wrap" v-if="activeEl===1">{{ $t('collaboration.representation') }}</p>
-      <p class="item_title" style="white-space: pre-wrap" v-if="activeEl===2">{{ $t('collaboration.dealing') }}</p>
-      <p class="item_title" style="white-space: pre-wrap" v-if="activeEl===3">{{ $t('collaboration.partnership') }}</p>
+    <div class="collab-content mb-32" >
+      <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===1">{{ $t('glider.vue') }}</span>
+      <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===2">{{ $t('glider.react') }}</span>
+      <span class="item_title" style="white-space: pre-wrap" v-if="activeEl===3">{{ $t('glider.templates') }}</span>
     </div>
   </page-section>
 </template>

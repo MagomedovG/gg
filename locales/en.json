@@ -7,10 +7,16 @@
   "first-section": {
     "title": "I’m Gamzat Magomedov. A Front-End developer",
     "grey": "based in Dagestan.",
-    "descr": "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.",
+    "descr": "I’m probably the most passionate developer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy."
   },
   "glider": {
-    "title": "title"
+    "title": "My experience with frameworks",
+    "button1": "Vue/Nuxt Js",
+    "button2": "React/Next Js",
+    "button3": "Other stack",
+    "vue": "I am proud to share my impressive experience with Vue/Nuxt, which has become my faithful companion in the world of front-end development. All my work projects were implemented on this amazing framework. With him, I immersed myself in the wonderful world of web development, learning from Vue and enjoying every moment of the creative process.\n\nGetting to know the frontend was, first of all, getting to know Vue. After all, it was with him that I mastered the basics of this exciting field and transformed my ideas into interactive web applications. Despite the fact that not all projects were filled with content or were not hosted by customers, each of them was an inexhaustible source of new experience and skills for me.",
+    "react": "In addition to Vue/Nuxt, I also began my fascinating acquaintance with React through pet projects. With each new project, I discovered the benefits of this framework, delving deeper into its functionality and learning to apply it in practice. I also had the opportunity to get acquainted with React Native, which added incredible mobile development capabilities to my arsenal.\n\nAlthough every path has its challenges, I look at my experience with pride, because it is thanks to it that I have become a more experienced and sought-after developer, capable of turning the most daring ideas into reality.",
+    "templates": "While working on the website of the Institute of Latin America of the Russian Academy of Sciences, I also had unique experience working with the WordPress content management system. This experience opened up new horizons of possibilities for me in creating web projects, allowing me to apply my development skills in the context of a specific organization."
   },
   "form": {
     "title": "Let's get started",
@@ -22,6 +28,7 @@
   "friend": {
     "title": "This is what people say about me",
     "descr": "Here are a few lines from people who I have worked with over the past all years in my software career."
-  }
+  },
+  "click": "Click for name!",
 
 }

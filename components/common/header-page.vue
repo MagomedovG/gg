@@ -2,15 +2,26 @@
   <page-section class="header_section">
     <header class="header flex-row justify-between items-center">
       <div class="flex-row items-center justify-between adaptive-header">
-        <h1 class="font-black text-3xl">MagomedovG.</h1>
-        <input type="checkbox"  v-model="darkMode">
+        <nuxt-link to="/">
+          <h1 class="font-black text-3xl">MagomedovG.</h1>
+        </nuxt-link>
+
+<!--        <input type="checkbox"  v-model="darkMode">-->
         <div class="header-translate flex-row">
           <button class="lang-btn" @click="changeLanguage('ru')" :class="{ 'active-lang' : activeRu }">RU</button>
           <button class="lang-btn" @click="changeLanguage('en')" :class="{ 'active-lang' : activeEn }">EN</button>
         </div>
       </div>
+      <div>
+        <input type="checkbox" class="checkbox" v-model="darkMode" id="toggleBtn" />
+        <label class="switch" for="toggleBtn">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
       <div class="flex-row justify-between header-links">
-        <nuxt-link class="header-link">{{ $t('experience') }}</nuxt-link>
+        <nuxt-link class="header-link" to="/experience">{{ $t('experience') }}</nuxt-link>
         <nuxt-link class="header-link">{{ $t('work') }}</nuxt-link>
         <nuxt-link class="header-link" >{{ $t('photo') }}</nuxt-link>
         <nuxt-link class="header-link" to="#form">{{ $t('contact') }}</nuxt-link>
@@ -59,6 +70,47 @@ const changeLanguage = (newLocale) => {
 
 </script>
 <style lang="scss" scoped>
+.switch {
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  /* Scale the size to your need */
+  transform: scale(0.7);
+}
+
+.switch .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .switch .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+.checkbox{
+  display: none;
+}
+
 .lang-btn{
   padding: 8px;
 }
@@ -76,6 +128,10 @@ const changeLanguage = (newLocale) => {
 }
 
 .light{
+  .switch{
+    background-color: #111;
+
+  }
   .header_section{
     background-image: linear-gradient(to right, #f0f0f0 35%, #ddd 35%, #ddd 100%);
   }
@@ -98,6 +154,12 @@ const changeLanguage = (newLocale) => {
   }
 }
 .dark{
+  .switch{
+    background-color: white;
+  }
+  .switch .ball{
+    background: #111111;
+  }
   .header_section{
     background-image: linear-gradient(to right, black 35%, rgb(19,18,25) 35%, rgb(19,18,25) 100%);
   }

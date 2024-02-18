@@ -14,7 +14,7 @@
         <input type="text" class="mb-10" id="name" v-model="message.company" placeholder="Имя">
         <label for="email" class="mb-2">{{$t('form.email')}}</label>
         <input type="text" class="mb-10" id="email" v-model="message.number" placeholder="Почта/Телеграмм">
-        <button type="submit">Отклик</button>
+        <button type="submit">{{ $t('contact') }}</button>
       </form>
     </div>
 

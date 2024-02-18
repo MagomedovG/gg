@@ -10,8 +10,8 @@
     </div>
     <div  style="position: relative">
       <interactive-friend  :imageUrl="imageSrc" :labels="labels"/>
+      <p class="clickhere">Click for name!</p>
     </div>
-
   </page-section>
 </template>
 

@@ -2,14 +2,14 @@
     <Swiper
         :modules="[SwiperAutoplay]"
         :slides-per-view="4"
-        :spaceBetween="80"
+        :spaceBetween="70"
         :loop="true"
         :loop-fill-group-with-blank="true"
         :speed="5000"
         :autoplay="{
-        delay: 0,
-        disableOnInteraction: false,
-      }"
+          delay: 0,
+          disableOnInteraction: false,
+        }"
 
     >
       <Swiper-Slide  v-for="icon in stack" :key="icon">
@@ -28,8 +28,4 @@ const props = defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
-.swiper-slide{
-  //width: 300px !important;
-}
-</style>
+

@@ -29,7 +29,6 @@
     padding: 30px 71px;
     /*background-color: white;*/
     border-radius: 62px;
-    color: rgba(11, 72, 165, 1);
     cursor: pointer;
     z-index: 2;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -39,7 +38,7 @@
     display: none;
 }
 .collab-buttons-active {
-    color: white;
+    color: white !important;
 }
 .glider {
     position: absolute;
@@ -47,7 +46,6 @@
     color: white;
     height: 100%;
     width: calc(100% / 3);
-    background-color: rgba(11, 72, 165, 1);
     z-index: 1;
     border-radius: 62px;
     transition: transform 0.3s ease;
@@ -162,6 +160,18 @@
     justify-content: space-between;
     height: 70%;
     width: 35%;
+}
+.light .glider{
+    background: #265fc1;
+}
+.light .collab-button{
+    color:#265fc1;
+}
+.dark .glider{
+    background: rgb(82, 33, 230);
+}
+.dark .collab-button{
+    color:rgb(82, 33, 230);
 }
 .collab-buttons label:nth-child(2){
     padding: 25px 50px
