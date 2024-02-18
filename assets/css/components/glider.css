@@ -161,6 +161,12 @@
     height: 70%;
     width: 35%;
 }
+.dark .glider-component{
+    background-color: black;
+}
+.light .glider-component{
+    background-color: #f0f0f0;
+}
 .light .glider{
     background: #265fc1;
 }
