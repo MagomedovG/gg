@@ -1,6 +1,9 @@
 .dark .map {
     background-color: black;
 }
+.light .map{
+    background-color: #f0f0f0;
+}
 .width-40{
     width: 40%;
 }

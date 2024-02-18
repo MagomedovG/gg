@@ -45,6 +45,9 @@ const stackIcons = ref([
   padding: 45px 0;
   background-color: rgb(19, 18, 25);
 }
+.light .stack{
+  background-color: #f0f0f0;
+}
 .stack div {
   display: flex;
   flex-direction: row;
