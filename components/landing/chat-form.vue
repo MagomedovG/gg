@@ -17,45 +17,61 @@
         <button type="submit">{{ $t('contact') }}</button>
       </form>
     </div>
-
   </page-section>
 </template>
+
 <script setup>
 import PageSection from "~/components/common/page-section.vue";
+import { ref } from 'vue'
+import { defineEmits } from 'vue'
 
 const message = ref({
   number:"",
   text:"",
   company:""
 })
-// const token = ref("6738891494:AAEnoHiWKWqlR6U7FZ53u4EUUqwZuGv4NuE")
-// const chatId = ref("748685783")
 const token = ref('6125836753:AAGQOkhgwaq5HvoBh4En6Tuf5H5PWVhxx5A')
 const chatId = ref('748685783')
+const emit = defineEmits(["is-complete", "not-complete"])
 const postData = async (url = '', data = {}) => {
-  // Формируем запрос
-  const response = await fetch(url, {
-    // Метод, если не указывать, будет использоваться GET
-    method: 'POST',
-    // Заголовок запроса
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    // Данные
-    // body: JSON.stringify(data)
-  });
-  return response.json();
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    });
+    const responseData = await response.json();
+    return responseData;
+  } catch (error) {
+    console.error('Error:', error);
+    throw new Error(error.message);
+  }
 }
 
 const submit = () => {
-  const fullMessage = `Сообщение от компании ${message.value.company}: "${message.value.text}"
-  Номер для связи: ${message.value.number}`
-  postData(`https://api.telegram.org/bot${token.value}/sendMessage?chat_id=${chatId.value}&text=${fullMessage}` )
-      .then(() => {
-        console.log(fullMessage);
-      });
+  // Проверяем, что все поля заполнены
+  if (message.value.text && message.value.company && message.value.number) {
+    const fullMessage = `Сообщение от компании ${message.value.company}: "${message.value.text}"
+    Номер для связи: ${message.value.number}`
+    postData(`https://api.telegram.org/bot${token.value}/sendMessage?chat_id=${chatId.value}&text=${fullMessage}`)
+        .then(() => {
+          message.value.text = ""
+          message.value.company  = ""
+          message.value.number = ""
+          emit("is-complete", true)
+        })
+        .catch(error => {
+          console.error('Error sending message:', error);
+          emit("not-complete", true)
+        });
+  } else {
+    // Если какое-то поле не заполнено, отправляем false
+    emit("not-complete", true)
+  }
 }
 </script>
+
 <style lang="scss" scoped>
 .dark {
   input{

@@ -9,11 +9,10 @@
       <div class="stack-container">
         <stack-slides :stack="stackIcons"/>
       </div>
-
     </div>
 
-    <chat-form id="form"/>
-
+    <chat-form id="form" @isComplete="completedForm" @notComplete="errorForm"/>
+    <completed :complete="complete" :notComplete="notComplete"/>
 
 <!--    <glider />-->
   </div>
@@ -26,7 +25,23 @@ import FriendSection from "~/components/landing/friend-section.vue";
 import StackSlides from "~/components/landing/stack-slides.vue";
 import ChatForm from "~/components/landing/chat-form.vue";
 import Glider from "~/components/landing/glider.vue";
-
+import Completed from "~/components/dialog/completed.vue";
+const complete = ref(null)
+const notComplete = ref(false)
+const completedForm = () => {
+  complete.value = true
+  setTimeout(() => {
+    complete.value = false
+  }, 2500)
+  console.log(complete.value)
+}
+const errorForm = () => {
+  notComplete.value = true
+  setTimeout(() => {
+    notComplete.value = false
+  }, 2500)
+  console.log(notComplete.value)
+}
 const stackIcons = ref([
     'nuxt3.svg',
     'tailwindcss.svg',

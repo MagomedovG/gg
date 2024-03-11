@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
-    'nuxt-swiper'
+    'nuxt-swiper',
   ],
     googleFonts: {
         prefetch: true,
