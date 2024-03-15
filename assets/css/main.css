@@ -57,6 +57,9 @@ span{
     color:rgba(132, 145, 160, 1);
     margin-bottom: 24px
 }
+
+
+
 @media screen and (max-width: 450px) {
     h1 {
         font-size: 1.275rem !important;

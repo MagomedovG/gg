@@ -2,7 +2,7 @@
   "welcome": "Hello",
   "experience":"Experience",
   "work":"Work",
-  "photo":"Contacts",
+  "crypto":"Crypto",
   "contact":"Response",
   "first-section": {
     "title": "I’m Gamzat Magomedov. A Front-End developer",
@@ -30,5 +30,10 @@
     "descr": "Here are a few lines from people who I have worked with over the past all years in my software career."
   },
   "click": "Click for name!",
-
+  "cryptopage": {
+    "ticker": "Ticker",
+    "add": "Add",
+    "delete": "Delete",
+    "graph": "Graphic"
+  }
 }

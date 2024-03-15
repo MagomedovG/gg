@@ -23,8 +23,8 @@
       <div class="flex-row justify-between header-links">
         <nuxt-link class="header-link" to="/experience">{{ $t('experience') }}</nuxt-link>
         <nuxt-link class="header-link">{{ $t('work') }}</nuxt-link>
-        <nuxt-link class="header-link" >{{ $t('photo') }}</nuxt-link>
-        <nuxt-link class="header-link" to="#form">{{ $t('contact') }}</nuxt-link>
+        <nuxt-link class="header-link" to="/crypto">{{ $t('crypto') }}</nuxt-link>
+        <nuxt-link class="header-link" to="/#form">{{ $t('contact') }}</nuxt-link>
       </div>
     </header>
 
@@ -80,10 +80,11 @@ const changeLanguage = (newLocale) => {
   position: relative;
   height: 26px;
   width: 50px;
-  /* Scale the size to your need */
   transform: scale(0.7);
 }
-
+.header-translate{
+  gap: 3px;
+}
 .switch .ball {
   background-color: #fff;
   border-radius: 50%;
