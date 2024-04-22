@@ -31,6 +31,7 @@
   },
   "click": "Click for name!",
   "cryptopage": {
+    "clue": "Enter the name of the cryptocurrency (For example: 'BTC')",
     "ticker": "Ticker",
     "add": "Add",
     "delete": "Delete",

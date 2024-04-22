@@ -2,9 +2,9 @@
   <div>
     <first-section/>
     <glider />
-    <div >
-      <friend-section />
-    </div>
+<!--    <div >-->
+<!--      <friend-section />-->
+<!--    </div>-->
     <div class="stack">
       <div class="stack-container">
         <stack-slides :stack="stackIcons"/>
